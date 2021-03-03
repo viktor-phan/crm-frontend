@@ -1,0 +1,23 @@
+.default-layout{
+    display: grid;
+    grid-template-rows: 80px auto 3rem;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+
+.header{
+    grid-area: header;
+    background-color: black;
+}
+.main{
+    grid-area: main;
+    min-height: 80vh;
+
+}
+.footer{
+    grid-area: footer;
+    background-color: black;
+    color: white;
+}

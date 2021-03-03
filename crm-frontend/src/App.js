@@ -1,12 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
-import {Button} from 'react-bootstrap';
-import { Entry } from './page/entry/Entry.page';
+import logo from "./logo.svg";
+import "./App.css";
+import { Button } from "react-bootstrap";
+import { Entry } from "./page/entry/Entry.page";
+import { DefaultLayout } from "./layouts/DefaultLayout";
 
 function App() {
   return (
     <div className="App">
-      <Entry />
+      {/*<Entry />*/}
+      <DefaultLayout>
+        Dashboard
+      </DefaultLayout>
     </div>
   );
 }
