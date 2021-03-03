@@ -8,7 +8,7 @@ export const ResetPassword = ({handleOnChange, handleOnResetSubmit, formSwitcher
     <Container>
       <Row>
         <Col>
-          <h1 className="text-info text-center">Reset Password</h1>
+          <h2 className="text-info text-center">Reset Password</h2>
           <br />
           <Form autoComplete="off" onSubmit="handleOnResetSubmit">
               <Form.Group>

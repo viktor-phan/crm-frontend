@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import "./Login.comp.style.css";
 
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 
@@ -8,7 +9,7 @@ export const LoginForm = ({handleOnChange, handleOnSubmit, formSwitcher, email, 
     <Container>
       <Row>
         <Col>
-          <h1 className="text-info text-center">Client Login</h1>
+          <h2 className="">Client Login</h2>
           <br />
           <Form autoComplete="off" onSubmit="handleOnSubmit">
               <Form.Group>

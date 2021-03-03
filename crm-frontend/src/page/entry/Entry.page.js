@@ -46,7 +46,7 @@ export const Entry = () => {
     };
 
     return (
-        <div className="entry-page bg-info">
+        <div className="entry-page">
            <Jumbotron className="form-box">
                {formLoad === 'login' && 
               <LoginForm handleOnChange= {handleOnChange} 
@@ -61,6 +61,8 @@ export const Entry = () => {
               />}
               
            </Jumbotron>
+           <img src="https://www.thoughtco.com/thmb/Y0u9dMhdSXvKQh10yOBoUu-C7vk=/3435x2576/smart/filters:no_upscale()/abstract-paper-flower-pattern-656688606-5acfba2eae9ab80038461ca0.jpg"
+            width="400px"></img>
         </div>
     )
 }

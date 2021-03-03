@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+h2{
+    color: purple;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+}
+Button{
+    width: 306px;
+}
