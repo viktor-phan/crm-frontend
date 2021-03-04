@@ -7,6 +7,7 @@ import { Dashboard } from "./pages/dashboard/Dashboard.page";
 import { AddTicket } from "./pages/new-ticket/AddTicket.page";
 import { TicketList } from "./pages/ticket-listing/TicketList.page";
 import { TicketLanding } from "./pages/ticket-landing/TicketLanding.page";
+import { GenerateFakeData } from "./pages/generateFakeData.page";
 function App() {
   return (
     <div className="App">
@@ -14,9 +15,9 @@ function App() {
       <DefaultLayout>
         {/* <Dashboard/>*/}
         {/*<AddTicket /> */}
-        {/*<TicketList />*/}
-        <TicketLanding />
-
+        <TicketList />
+        {/*<TicketLanding />*/}
+       
       </DefaultLayout>
     </div>
   );

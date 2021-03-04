@@ -25,7 +25,7 @@ export const TicketList = () => {
     const displayTickets = tickets.filter(
       (row) => 
      /* Need to chaneg soon */
-      row.status.toLowerCase().includes(sttr.toLowerCase()))
+      row.subject.toLowerCase().includes(sttr.toLowerCase()))
     ;
     setDisplayTicket(displayTickets);
   };

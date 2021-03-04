@@ -1,6 +1,6 @@
 .default-layout{
     display: grid;
-    grid-template-rows: 80px auto 3rem;
+    grid-template-rows: 4rem auto 3rem;
     grid-template-areas: 
     "header"
     "main"
@@ -20,4 +20,7 @@
     grid-area: footer;
     background-color: black;
     color: white;
+}
+.breadcrumb{
+    background-color: white  !important ;
 }

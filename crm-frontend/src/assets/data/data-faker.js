@@ -1,16 +1,17 @@
 
 import Faker from 'faker';
-import Fs from 'fs';
+import { number, string } from 'prop-types';
+import data from "./dummy-tickets.json"
 
+let entity = {
+  "id": number,
+  "subject": string,
+  "status": string,
+  "addedDate": string
+}
+entity.id = faker.name.findName();
+entity.subject = faker.internet.email();
+entity.status = faker.internet.email();
+entity.addedDate = Faker.Date.between(~D[2000-12-20], ~D[2000-12-25]);
 
-var data = {};
-
-data.id = faker.name.findName();
-data.subject = faker.internet.email();
-data.status = faker.internet.email();
-data.addedDate = Faker.Date.between(~D[2000-12-20], ~D[2000-12-25]);
-
-fs.writeFile('data.json', JSON.stringify(data), (err) => {
-  if (err) throw err;
-  console.log('It\'s saved!');
-});
+data.push(entity);
