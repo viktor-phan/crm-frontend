@@ -8,10 +8,10 @@ import { AddTicket } from "./page/new-ticket/AddTicket.page";
 function App() {
   return (
     <div className="App">
-      {/*<Entry />*/}
+      <Entry />
       <DefaultLayout>
         {/* <Dashboard/>*/}
-        <AddTicket />
+        {/*<AddTicket />*/}
       </DefaultLayout>
     </div>
   );

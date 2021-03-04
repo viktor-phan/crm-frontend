@@ -32,7 +32,7 @@ export const LoginForm = ({handleOnChange, handleOnSubmit, formSwitcher, email, 
                   placeholder="Enter password"
                   required></Form.Control>
               </Form.Group>
-              <Button type="submit">Login</Button>
+              <Button type="submit" block>Login</Button>
           </Form>
           <hr />
         </Col>

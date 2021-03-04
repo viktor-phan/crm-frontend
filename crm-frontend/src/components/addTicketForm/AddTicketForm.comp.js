@@ -2,7 +2,7 @@ import React from "react";
 import { Form, Jumbotron, Row, Col, Button } from "react-bootstrap";
 import PropTypes from "prop-types";
 import "./add-ticket-form.style.css";
-import "../../utils/validation";
+
 
 export const AddTicketForm = ({handleOnChange, handleOnSubmit, formData}) => {
   return (
