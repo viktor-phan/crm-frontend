@@ -3,12 +3,16 @@ import { Form, Jumbotron, Row, Col, Button } from "react-bootstrap";
 import PropTypes from "prop-types";
 import "./add-ticket-form.style.css";
 
-
-export const AddTicketForm = ({handleOnChange, handleOnSubmit, formData}) => {
+export const AddTicketForm = ({
+  handleOnChange,
+  handleOnSubmit,
+  formData,
+  formDataErr,
+}) => {
   return (
     <Jumbotron className="add-new-ticket">
-        <h1 className="text-info text-center">Add a New Ticket</h1>
-        <hr />
+      <h1 className="text-info text-center">Add a New Ticket</h1>
+      <hr />
       <Form autoComplete="off" onSubmit={handleOnSubmit}>
         <Form.Group as={Row}>
           <Form.Label column sm={3}>
@@ -23,6 +27,9 @@ export const AddTicketForm = ({handleOnChange, handleOnSubmit, formData}) => {
               placeholder="Enter subject"
               required
             ></Form.Control>
+            <Form.Text className="text-danger">
+              {formDataErr.subject && "Subject is invalid"}
+            </Form.Text>
           </Col>
         </Form.Group>
         <Form.Group as={Row}>
@@ -30,12 +37,13 @@ export const AddTicketForm = ({handleOnChange, handleOnSubmit, formData}) => {
             Issue Date
           </Form.Label>
           <Col>
-            <Form.Control 
-            type="date" 
-            name="addedDate"
-            value={formData.addedDate} 
-            onChange={handleOnChange}
-            required></Form.Control>
+            <Form.Control
+              type="date"
+              name="addedDate"
+              value={formData.addedDate}
+              onChange={handleOnChange}
+              required
+            ></Form.Control>
           </Col>
         </Form.Group>
         <Form.Group>
@@ -52,15 +60,14 @@ export const AddTicketForm = ({handleOnChange, handleOnSubmit, formData}) => {
           ></Form.Control>
         </Form.Group>
         <Button type="submit" variant="success" block>
-          Login
+          Submit
         </Button>
       </Form>
     </Jumbotron>
   );
 };
-AddTicketForm.propTypes ={
-    handleOnChange: PropTypes.func.isRequired,
-    handleOnSubmit: PropTypes.func.isRequired,
-    formData: PropTypes.object.isRequired,
-  
-}
+AddTicketForm.propTypes = {
+  handleOnChange: PropTypes.func.isRequired,
+  handleOnSubmit: PropTypes.func.isRequired,
+  formData: PropTypes.object.isRequired,
+};

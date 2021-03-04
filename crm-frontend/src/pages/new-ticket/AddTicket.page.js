@@ -9,8 +9,15 @@ const initialFormData = {
   detail: "",
 };
 
+const initialFormDataErr = {
+  subject: false,
+  addedDate: false,
+  detail: false,
+}
 export const AddTicket = () => {
   const [formData, setFormData] = useState(initialFormData);
+  const [formDataErr, setFormDataErr] = useState(initialFormDataErr);
+
 
   useEffect(() => {}, [formData]);
   const handleOnChange = (e) => {
@@ -22,8 +29,12 @@ export const AddTicket = () => {
   };
   const handleOnSubmit = async (e) => {
     e.preventDefault();
+    setFormDataErr(initialFormDataErr);
     const isValid = await shortText(formData.subject);
-    !isValid ? alert("Subject too short!"):console.log("Submited");
+    !isValid && setFormDataErr({
+      ...initialFormDataErr,
+      subject: !isValid,
+    }) ;
     
   };
 
@@ -40,6 +51,7 @@ export const AddTicket = () => {
             handleOnChange={handleOnChange}
             formData={formData}
             handleOnSubmit={handleOnSubmit}
+            formDataErr={formDataErr}
           />
         </Col>
       </Row>
