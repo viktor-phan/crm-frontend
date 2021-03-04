@@ -3,7 +3,21 @@
         "id": "3172",
         "subject": "Liliana Fadel",
         "status": "Vision-oriented leading edge emulation",
-        "addedDate": "2014-2-10"
+        "addedDate": "2014-2-10",
+        "history": [
+            {
+                "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In hac habitasse platea dictumst quisque sagittis purus. Nec feugiat nisl pretium fusce id. Vel orci porta non pulvinar neque. Fringilla ut morbi tincidunt augue interdum velit euismod in pellentesque. Ac tortor dignissim convallis aenean et tortor at. Sed arcu non odio euismod lacinia at quis risus sed. Eget nunc lobortis mattis aliquam faucibus. Semper risus in hendrerit gravida rutrum quisque non tellus orci. Non enim praesent elementum facilisis leo vel.",
+                "messageBy": "John Doe",
+                "date": "2020-03-21"
+            },
+            {
+                "message": "Cras feugiat, quam ac lobortis scelerisque, purus ex dignissim velit, ut pharetra turpis sem sed augue. Morbi mollis purus lorem, tincidunt euismod mi venenatis at. Aliquam erat volutpat. Sed varius dolor quis arcu fringilla semper. Sed auctor a ante nec porta. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed iaculis vestibulum purus sit amet sodales. Aenean faucibus nunc sed nibh malesuada, a rutrum sapien lobortis. Praesent fringilla sapien quam, ac convallis massa fringilla scelerisque.",
+
+
+                "messageBy": "Mary Ann",
+                "date": "2020-03-22"
+            }
+        ]
     },
     {
         "id": "22891",

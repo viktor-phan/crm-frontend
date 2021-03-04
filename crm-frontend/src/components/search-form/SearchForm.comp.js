@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 
 export const SearchForm = ({handleOnChange, str}) => {
     return (
-       <Form>
+       <Form autoComplete="off">
            <Form.Group as={Row}>
                <Form.Label column sm="2">Search:</Form.Label>
                <Col sm="10">

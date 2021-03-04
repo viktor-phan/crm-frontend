@@ -11,12 +11,12 @@ import { GenerateFakeData } from "./pages/generateFakeData.page";
 function App() {
   return (
     <div className="App">
-      {/* <Entry />*/}
+      {/* <Entry /> */}
       <DefaultLayout>
-        {/* <Dashboard/>*/}
-        {/*<AddTicket /> */}
-        <TicketList />
-        {/*<TicketLanding />*/}
+        <Dashboard/>
+        {/* <AddTicket /> */}
+        {/* <TicketList /> */}
+        {/* <TicketLanding /> */}
        
       </DefaultLayout>
     </div>

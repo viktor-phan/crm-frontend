@@ -5,7 +5,7 @@ import PropTypes  from "prop-types";
 export const TicketTable = ({ tickets }) => {
   
   return (
-    <Table striped bordered hover>
+    <Table striped bordered hover overflow>
       <thead>
         <tr>
           <th>No.</th>
