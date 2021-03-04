@@ -2,7 +2,19 @@
     {
         "id": 1,
         "status": "SSL issue",
-        "addedDate": "2021-03-24"
+        "addedDate": "2021-03-24",
+        "history":[
+            {
+                "date": "2020-12-31",
+                "message": "dsfhkjsdahfkjvjkdcx",
+                "messageBy" : "John Doe"
+            },
+            {
+                "date": "2020-12-31",
+                "message": "dsfhkjsdahfkjvjkdcx",
+                "messageBy" : "Mary Ann"
+            }
+        ]
     },
     {
         "id": 2,
