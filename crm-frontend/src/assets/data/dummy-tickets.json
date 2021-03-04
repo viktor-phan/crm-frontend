@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "status": "SSL issue",
+        "addedDate": "2021-03-24"
+    },
+    {
+        "id": 2,
+        "status": "SSL issue",
+        "addedDate": "2021-03-24"
+    },
+    {
+        "id": 3,
+        "status": "SSL issue",
+        "addedDate": "2021-03-24"
+    },
+    {
+        "id": 4,
+        "status": "SSL issue",
+        "addedDate": "2021-03-24"
+    },
+    {
+        "id": 5,
+        "status": "SSL issue",
+        "addedDate": "2021-03-24"
+    }
+]
