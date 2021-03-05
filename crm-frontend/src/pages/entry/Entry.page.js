@@ -62,7 +62,7 @@ export const Entry = () => {
               
            </Jumbotron>
            <img src="https://www.thoughtco.com/thmb/Y0u9dMhdSXvKQh10yOBoUu-C7vk=/3435x2576/smart/filters:no_upscale()/abstract-paper-flower-pattern-656688606-5acfba2eae9ab80038461ca0.jpg"
-            width="400px"></img>
+            width="400px" alt="background"></img>
         </div>
     )
 }
