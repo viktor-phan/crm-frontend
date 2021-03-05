@@ -11,7 +11,7 @@
     height:500px;
 }
 .entry-page{
-    background: url(https://img.freepik.com/free-vector/subtle-rombus-white-gray-pattern-background_1017-25098.jpg?size=626&ext=jpg);
+    background: url(../../assets/img/background.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
 }
