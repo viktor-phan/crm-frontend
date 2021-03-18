@@ -1,29 +1,35 @@
 import React, { useState, useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { fetchAllTickets } from "./ticketsAction";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { PageBreadcrumb } from "../../components/breadcrumb/Breadcrumb.comp";
 import { SearchForm } from "../../components/search-form/SearchForm.comp";
 import { TicketTable } from "../../components/ticket-table/TicketTable.comp";
-import tickets from "../../assets/data/dummy-tickets.json";
 import { Link } from "react-router-dom";
+
 export const TicketList = () => {
+  const dispatch = useDispatch()
+
   const [str, setStr] = useState("");
-  const [displayTicket, setDisplayTicket] = useState(tickets);
+  const [displayTicket, setDisplayTicket] = useState();
 
-  useEffect(() => {}, [str, displayTicket]);
+  useEffect(() => {
 
-  const handleOnChange = (e) => {
-    const { value } = e.target;
-    setStr(value);
-    searchTicket(value);
-  };
+    dispatch(fetchAllTickets())
+  }, [str, dispatch]);
 
-  const searchTicket = (sttr) => {
-    const displayTickets = tickets.filter((row) =>
-      /* Need to chaneg soon */
-      row.subject.toLowerCase().includes(sttr.toLowerCase())
-    );
-    setDisplayTicket(displayTickets);
-  };
+  // const handleOnChange = (e) => {
+  //   const { value } = e.target;
+  //   setStr(value);
+  //   searchTicket(value);
+  // };
+
+  // const searchTicket = (sttr) => {
+  //   const displayTickets = tickets.filter((row) =>
+  //     /* Need to chaneg soon */
+  //     row.subject.toLowerCase().includes(sttr.toLowerCase())
+  //   );
+  // };
 
   return (
     <Container>
@@ -39,13 +45,13 @@ export const TicketList = () => {
           </Link>
         </Col>
         <Col className="text-right">
-          <SearchForm handleOnChange={handleOnChange} str={str} />
+          <SearchForm />
         </Col>
       </Row>
       <hr />
       <Row>
         <Col>
-          <TicketTable tickets={displayTicket} />
+          <TicketTable />
         </Col>
       </Row>
     </Container>

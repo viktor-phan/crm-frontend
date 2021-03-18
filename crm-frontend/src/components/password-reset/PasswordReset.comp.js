@@ -37,9 +37,9 @@ export const ResetPassword = ({handleOnChange, handleOnResetSubmit, formSwitcher
   );
 };
 
-ResetPassword.propTypes ={
-    handleOnChange: PropTypes.func.isRequired,
-    handleOnSubmit: PropTypes.func.isRequired,
-    email: PropTypes.string.isRequired,
+// ResetPassword.propTypes ={
+//     handleOnChange: PropTypes.func.isRequired,
+//     handleOnSubmit: PropTypes.func.isRequired,
+//     email: PropTypes.string.isRequired,
    
-}
+// }

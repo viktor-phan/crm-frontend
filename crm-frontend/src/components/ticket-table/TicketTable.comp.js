@@ -1,12 +1,13 @@
 import React from "react";
 import { Table } from "react-bootstrap";
-import PropTypes  from "prop-types";
-import {Link} from "react-router-dom";
-
-export const TicketTable = ({ tickets }) => {
-  
+import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
+export const TicketTable = () => {
+  const { searchTicketList, isLoading, error } = useSelector((state) => state.tickets);
+  if(isLoading) return <h1>Loading ...</h1>
+  if(error) return <h3>{error}</h3>
   return (
-    <Table striped bordered hover overflow>
+    <Table striped bordered hover >
       <thead>
         <tr>
           <th>No.</th>
@@ -16,27 +17,25 @@ export const TicketTable = ({ tickets }) => {
         </tr>
       </thead>
       <tbody>
-        {tickets.length ? (
-          tickets.map((row) => (
-            <tr key={row.id}>
-              <td>{row.id}</td>
-              <td><Link to={`/ticket/${row.id}`} >{row.subject}</Link></td>
+        {searchTicketList.length ? (
+          searchTicketList.map((row) => (
+            <tr key={row._id}>
+              <td>{row._id}</td>
+              <td>
+                <Link to={`/ticket/${row._id}`}>{row.subject}</Link>
+              </td>
               <td>{row.status}</td>
-              <td>{row.addedDate}</td>
+              <td>{row.openAt}</td>
             </tr>
           ))
         ) : (
-            <tr>
-                <td colSpan="4" className="text-center">No data {""}</td>
-            </tr>
+          <tr>
+            <td colSpan="4" className="text-center">
+              No data {""}
+            </td>
+          </tr>
         )}
       </tbody>
     </Table>
   );
 };
-
-
-TicketTable.propTypes = {
-  tickets: PropTypes.array.isRequired,
-
-}

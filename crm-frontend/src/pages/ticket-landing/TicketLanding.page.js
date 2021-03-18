@@ -5,7 +5,7 @@ import tickets from "../../assets/data/dummy-tickets.json";
 import { MessageHistory } from "../../components/message-history/MessageHistory.comp";
 import { UpdateTicket } from "../../components/update-ticket/UpdateTicket.comp";
 import { Link, useParams } from "react-router-dom";
-const ticket = tickets[0];
+
 
 export const TicketLanding = () => {
   const { tId } = useParams();
@@ -14,7 +14,7 @@ export const TicketLanding = () => {
 
   useEffect(() => {
     for (let i = 0; i < tickets.length; i++) {
-      if (tickets[i].id == tId) {
+      if (tickets[i].id === tId) {
         setTicket(tickets[i]);
         continue;
       }

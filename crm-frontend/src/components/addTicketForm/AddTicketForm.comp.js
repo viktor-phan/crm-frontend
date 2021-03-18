@@ -66,8 +66,8 @@ export const AddTicketForm = ({
     </Jumbotron>
   );
 };
-AddTicketForm.propTypes = {
-  handleOnChange: PropTypes.func.isRequired,
-  handleOnSubmit: PropTypes.func.isRequired,
-  formData: PropTypes.object.isRequired,
-};
+// AddTicketForm.propTypes = {
+//   handleOnChange: PropTypes.func.isRequired,
+//   handleOnSubmit: PropTypes.func.isRequired,
+//   formData: PropTypes.object.isRequired,
+// };

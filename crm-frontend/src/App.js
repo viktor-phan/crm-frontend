@@ -1,7 +1,7 @@
 import "./App.css";
 import { Entry } from "./pages/entry/Entry.page";
 // import { DefaultLayout } from "./layouts/DefaultLayout";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Dashboard } from "./pages/dashboard/Dashboard.page";
 import { AddTicket } from "./pages/new-ticket/AddTicket.page";
 import { TicketList } from "./pages/ticket-listing/TicketList.page";
